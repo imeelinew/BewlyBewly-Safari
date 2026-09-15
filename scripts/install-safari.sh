@@ -8,6 +8,8 @@ derived_data="$repo_dir/build/Install"
 product="$derived_data/Build/Products/Release/BewlyBewly Safari.app"
 product_extension="$product/Contents/PlugIns/BewlyBewly Safari Extension.appex"
 destination="/Applications/BewlyBewly Safari.app"
+destination_extension="$destination/Contents/PlugIns/BewlyBewly Safari Extension.appex"
+extension_identifier="dev.eli.bewlybewly.safari.Extension"
 
 cd "$repo_dir"
 pnpm build-safari
@@ -30,6 +32,8 @@ fi
 
 ditto "$product" "$destination"
 pluginkit -r "$product_extension" 2>/dev/null || true
+pluginkit -a "$destination_extension"
+pluginkit -e use -i "$extension_identifier"
 open "$destination"
 
 echo "Installed: $destination"
