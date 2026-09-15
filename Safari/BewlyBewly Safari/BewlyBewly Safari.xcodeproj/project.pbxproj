@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4549615930593A7100B35081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549615830593A7100B35081 /* AppDelegate.swift */; };
+		4549615D30593A7100B35081 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 4549615B30593A7100B35081 /* Main.html */; };
+		4549615F30593A7100B35081 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4549615E30593A7100B35081 /* Icon.png */; };
+		4549616130593A7100B35081 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 4549616030593A7100B35081 /* Style.css */; };
+		4549616330593A7100B35081 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 4549616230593A7100B35081 /* Script.js */; };
+		4549616530593A7100B35081 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549616430593A7100B35081 /* ViewController.swift */; };
+		4549616830593A7100B35081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4549616630593A7100B35081 /* Main.storyboard */; };
+		4549616A30593A7100B35081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4549616930593A7100B35081 /* Assets.xcassets */; };
+		4549617130593A7100B35081 /* BewlyBewly Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4549617030593A7100B35081 /* BewlyBewly Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4549617630593A7100B35081 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549617530593A7100B35081 /* SafariWebExtensionHandler.swift */; };
+		4549618530593A7200B35081 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 4549618230593A7200B35081 /* dist */; };
+		4549618630593A7200B35081 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4549618330593A7200B35081 /* manifest.json */; };
+		4549618730593A7200B35081 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 4549618430593A7200B35081 /* assets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4549617230593A7100B35081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4549614D30593A7100B35081 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4549616F30593A7100B35081;
+			remoteInfo = "BewlyBewly Safari Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4549617D30593A7100B35081 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				4549617130593A7100B35081 /* BewlyBewly Safari Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4549615530593A7100B35081 /* BewlyBewly Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BewlyBewly Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4549615830593A7100B35081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4549615C30593A7100B35081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		4549615E30593A7100B35081 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4549616030593A7100B35081 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		4549616230593A7100B35081 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		4549616430593A7100B35081 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4549616730593A7100B35081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4549616930593A7100B35081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4549616B30593A7100B35081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4549617030593A7100B35081 /* BewlyBewly Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BewlyBewly Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4549617530593A7100B35081 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		4549617730593A7100B35081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4549618230593A7200B35081 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = Resources/dist; sourceTree = "<group>"; };
+		4549618330593A7200B35081 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		4549618430593A7200B35081 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = Resources/assets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4549615230593A7100B35081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		4549616D30593A7100B35081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4549614C30593A7100B35081 = {
+			isa = PBXGroup;
+			children = (
+				4549615730593A7100B35081 /* BewlyBewly Safari */,
+				4549617430593A7100B35081 /* BewlyBewly Safari Extension */,
+				4549615630593A7100B35081 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4549615630593A7100B35081 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4549615530593A7100B35081 /* BewlyBewly Safari.app */,
+				4549617030593A7100B35081 /* BewlyBewly Safari Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4549615730593A7100B35081 /* BewlyBewly Safari */ = {
+			isa = PBXGroup;
+			children = (
+				4549615830593A7100B35081 /* AppDelegate.swift */,
+				4549616430593A7100B35081 /* ViewController.swift */,
+				4549616630593A7100B35081 /* Main.storyboard */,
+				4549616930593A7100B35081 /* Assets.xcassets */,
+				4549616B30593A7100B35081 /* Info.plist */,
+				4549615A30593A7100B35081 /* Resources */,
+			);
+			path = "BewlyBewly Safari";
+			sourceTree = "<group>";
+		};
+		4549615A30593A7100B35081 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4549615B30593A7100B35081 /* Main.html */,
+				4549615E30593A7100B35081 /* Icon.png */,
+				4549616030593A7100B35081 /* Style.css */,
+				4549616230593A7100B35081 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4549617430593A7100B35081 /* BewlyBewly Safari Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4549618130593A7200B35081 /* Resources */,
+				4549617530593A7100B35081 /* SafariWebExtensionHandler.swift */,
+				4549617730593A7100B35081 /* Info.plist */,
+			);
+			path = "BewlyBewly Safari Extension";
+			sourceTree = "<group>";
+		};
+		4549618130593A7200B35081 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4549618230593A7200B35081 /* dist */,
+				4549618330593A7200B35081 /* manifest.json */,
+				4549618430593A7200B35081 /* assets */,
+			);
+			name = Resources;
+			path = "BewlyBewly Safari Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4549615430593A7100B35081 /* BewlyBewly Safari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4549617E30593A7100B35081 /* Build configuration list for PBXNativeTarget "BewlyBewly Safari" */;
+			buildPhases = (
+				4549615130593A7100B35081 /* Sources */,
+				4549615230593A7100B35081 /* Frameworks */,
+				4549615330593A7100B35081 /* Resources */,
+				4549617D30593A7100B35081 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4549617330593A7100B35081 /* PBXTargetDependency */,
+			);
+			name = "BewlyBewly Safari";
+			productName = "BewlyBewly Safari";
+			productReference = 4549615530593A7100B35081 /* BewlyBewly Safari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4549616F30593A7100B35081 /* BewlyBewly Safari Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4549617A30593A7100B35081 /* Build configuration list for PBXNativeTarget "BewlyBewly Safari Extension" */;
+			buildPhases = (
+				4549616C30593A7100B35081 /* Sources */,
+				4549616D30593A7100B35081 /* Frameworks */,
+				4549616E30593A7100B35081 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "BewlyBewly Safari Extension";
+			productName = "BewlyBewly Safari Extension";
+			productReference = 4549617030593A7100B35081 /* BewlyBewly Safari Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4549614D30593A7100B35081 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					4549615430593A7100B35081 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					4549616F30593A7100B35081 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 4549615030593A7100B35081 /* Build configuration list for PBXProject "BewlyBewly Safari" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4549614C30593A7100B35081;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4549615630593A7100B35081 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4549615430593A7100B35081 /* BewlyBewly Safari */,
+				4549616F30593A7100B35081 /* BewlyBewly Safari Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4549615330593A7100B35081 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				4549615F30593A7100B35081 /* Icon.png in Resources */,
+				4549616830593A7100B35081 /* Main.storyboard in Resources */,
+				4549616330593A7100B35081 /* Script.js in Resources */,
+				4549615D30593A7100B35081 /* Main.html in Resources */,
+				4549616A30593A7100B35081 /* Assets.xcassets in Resources */,
+				4549616130593A7100B35081 /* Style.css in Resources */,
+			);
+		};
+		4549616E30593A7100B35081 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				4549618730593A7200B35081 /* assets in Resources */,
+				4549618630593A7200B35081 /* manifest.json in Resources */,
+				4549618530593A7200B35081 /* dist in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4549615130593A7100B35081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				4549616530593A7100B35081 /* ViewController.swift in Sources */,
+				4549615930593A7100B35081 /* AppDelegate.swift in Sources */,
+			);
+		};
+		4549616C30593A7100B35081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				4549617630593A7100B35081 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4549617330593A7100B35081 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4549616F30593A7100B35081 /* BewlyBewly Safari Extension */;
+			targetProxy = 4549617230593A7100B35081 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4549615B30593A7100B35081 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4549615C30593A7100B35081 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		4549616630593A7100B35081 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4549616730593A7100B35081 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4549617830593A7100B35081 /* Debug configuration for PBXProject "BewlyBewly Safari" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4549617930593A7100B35081 /* Release configuration for PBXProject "BewlyBewly Safari" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4549617B30593A7100B35081 /* Debug configuration for PBXNativeTarget "BewlyBewly Safari Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 41;
+				DEVELOPMENT_TEAM = 5Q5QT76MJU;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BewlyBewly Safari Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BewlyBewly Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 0.41.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.eli.bewlybewly.safari.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4549617C30593A7100B35081 /* Release configuration for PBXNativeTarget "BewlyBewly Safari Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 41;
+				DEVELOPMENT_TEAM = 5Q5QT76MJU;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BewlyBewly Safari Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BewlyBewly Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 0.41.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.eli.bewlybewly.safari.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4549617F30593A7100B35081 /* Debug configuration for PBXNativeTarget "BewlyBewly Safari" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 41;
+				DEVELOPMENT_TEAM = 5Q5QT76MJU;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BewlyBewly Safari/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BewlyBewly Safari";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 0.41.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.eli.bewlybewly.safari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4549618030593A7100B35081 /* Release configuration for PBXNativeTarget "BewlyBewly Safari" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 41;
+				DEVELOPMENT_TEAM = 5Q5QT76MJU;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BewlyBewly Safari/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BewlyBewly Safari";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 0.41.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.eli.bewlybewly.safari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4549615030593A7100B35081 /* Build configuration list for PBXProject "BewlyBewly Safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4549617830593A7100B35081 /* Debug configuration for PBXProject "BewlyBewly Safari" */,
+				4549617930593A7100B35081 /* Release configuration for PBXProject "BewlyBewly Safari" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		4549617A30593A7100B35081 /* Build configuration list for PBXNativeTarget "BewlyBewly Safari Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4549617B30593A7100B35081 /* Debug configuration for PBXNativeTarget "BewlyBewly Safari Extension" */,
+				4549617C30593A7100B35081 /* Release configuration for PBXNativeTarget "BewlyBewly Safari Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		4549617E30593A7100B35081 /* Build configuration list for PBXNativeTarget "BewlyBewly Safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4549617F30593A7100B35081 /* Debug configuration for PBXNativeTarget "BewlyBewly Safari" */,
+				4549618030593A7100B35081 /* Release configuration for PBXNativeTarget "BewlyBewly Safari" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4549614D30593A7100B35081 /* Project object */;
+	validationLevel = 1;
+}
