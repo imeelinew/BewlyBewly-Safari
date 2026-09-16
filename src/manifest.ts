@@ -15,7 +15,6 @@ export async function getManifest() {
   const safariWebAccessibleResources = isSafari
     ? ['dist/inject/index.js']
     : []
-
   // update this file to update this manifest.json
   // can also be conditional based on your need
   const manifest: Manifest.WebExtensionManifest = {

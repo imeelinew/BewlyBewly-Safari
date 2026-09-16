@@ -13,13 +13,9 @@ import { compareVersions, injectCSS, isHomePage, isInIframe, isNotificationPage,
 import { SVG_ICONS } from '~/utils/svgIcons'
 
 import { version } from '../../package.json'
-import { startSafariCommentThemeBridge } from './safariCommentTheme'
 import App from './views/App.vue'
 
 const isFirefox: boolean = /Firefox/i.test(navigator.userAgent)
-
-if (__SAFARI__)
-  startSafariCommentThemeBridge()
 
 // Fix `OverlayScrollbars` not working in Firefox
 // https://github.com/fingerprintjs/fingerprintjs/issues/683#issuecomment-881210244

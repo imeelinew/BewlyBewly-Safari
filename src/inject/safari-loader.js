@@ -4,18 +4,29 @@
 // isolated extension world.
 (() => {
   const marker = 'data-bewlybewly-safari-loader'
-  if (document.documentElement.hasAttribute(marker))
-    return
 
-  document.documentElement.setAttribute(marker, '')
+  function loadPageWorldScript() {
+    const root = document.documentElement
+    if (!root) {
+      document.addEventListener('readystatechange', loadPageWorldScript, { once: true })
+      return
+    }
 
-  const script = document.createElement('script')
-  script.src = globalThis.browser.runtime.getURL('dist/inject/index.js')
-  script.async = false
-  script.addEventListener('load', () => script.remove(), { once: true })
-  script.addEventListener('error', () => {
-    document.documentElement.removeAttribute(marker)
-    script.remove()
-  }, { once: true })
-  document.documentElement.appendChild(script)
+    if (root.hasAttribute(marker))
+      return
+
+    root.setAttribute(marker, '')
+
+    const script = document.createElement('script')
+    script.src = globalThis.browser.runtime.getURL('dist/inject/index.js')
+    script.async = false
+    script.addEventListener('load', () => script.remove(), { once: true })
+    script.addEventListener('error', () => {
+      root.removeAttribute(marker)
+      script.remove()
+    }, { once: true })
+    root.appendChild(script)
+  }
+
+  loadPageWorldScript()
 })()
