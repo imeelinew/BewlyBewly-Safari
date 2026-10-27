@@ -1,18 +1,18 @@
 # BewlyBewly Safari
 
-这是 [BewlyBewly](https://github.com/BewlyBewly/BewlyBewly) 的独立 Safari Web Extension 工程。网页端源码保持与上游一致，Safari 宿主 App 和扩展 Target 位于 `Safari/`。
+This is a standalone Safari Web Extension project for [BewlyBewly](https://github.com/BewlyBewly/BewlyBewly). The web source follows upstream; the Safari host app and extension target are in `Safari/`.
 
-## 已做的 Safari 适配
+## Safari adaptations
 
-- 使用 Apple Safari Web Extension Converter 生成 macOS 宿主 App 与扩展 Target。
-- 将 Manifest V3 后台 Service Worker 转为 Safari 支持的后台脚本。
-- 用 Web Accessible Resource 桥接页面脚本，替代 Safari 不支持的 `content_scripts[].world = "MAIN"`。
-- 移除 Safari 不支持且非必要的 `persistent`、`match_about_blank` Manifest 字段。
-- 配置本机开发团队和 `dev.eli.bewlybewly.safari` Bundle ID，可直接签名安装。
+- Generated the macOS host app and extension target with Apple's Safari Web Extension Converter.
+- Converted the Manifest V3 background service worker to a Safari-supported background script.
+- Used a web-accessible resource to bridge page scripts in place of Safari's unsupported `content_scripts[].world = "MAIN"`.
+- Removed unsupported, unnecessary `persistent` and `match_about_blank` manifest fields.
+- Configured the local development team and `dev.eli.bewlybewly.safari` bundle ID for signing and installation.
 
-## 构建
+## Build
 
-环境要求：macOS 12.3 或更高版本、Safari 15.4 或更高版本、Xcode、Node.js，以及 Corepack 提供的 pnpm 9.5.0。
+Requirements: macOS 12.3 or later, Safari 15.4 or later, Xcode, Node.js, and pnpm 9.5.0 through Corepack.
 
 ```sh
 pnpm install --frozen-lockfile
@@ -27,16 +27,16 @@ xcodebuild \
   build
 ```
 
-## 安装
+## Install
 
 ```sh
 pnpm install-safari
 ```
 
-安装脚本会重新生成扩展资源、以 Apple Development 证书构建并签名，然后安装到 `/Applications/BewlyBewly Safari.app`。
+The installation script regenerates extension resources, builds and signs with an Apple Development certificate, and installs to `/Applications/BewlyBewly Safari.app`.
 
-首次安装后，在 Safari 的 **设置 → 扩展** 中启用 **BewlyBewly Safari Extension**，并为 Bilibili 网站选择“始终允许”。
+After installation, enable **BewlyBewly Safari Extension** in Safari **Settings → Extensions** and choose **Always Allow** for Bilibili.
 
-## 同步上游
+## Sync upstream
 
-本仓库的 `upstream` 远程指向原项目。合并上游更新后，重新运行 `pnpm install-safari` 即可刷新 Safari 版本。
+The `upstream` remote points to the original project. After merging upstream updates, run `pnpm install-safari` again to refresh the Safari version.
