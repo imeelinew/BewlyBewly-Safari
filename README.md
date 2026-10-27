@@ -3,8 +3,6 @@
 > [!NOTE]
 > This repository is a standalone Safari Web Extension migration. See [README-SAFARI.md](./README-SAFARI.md) for the Safari compatibility changes, build steps, and local installation workflow.
 
-English | [官话 - 简体中文](README-cmn_CN.md) | [官話 - 繁體中文](README-cmn_TW.md) | [廣東話](README-jyut.md)
-
 <p align="center" style="margin-bottom: 0px !important;">
 <img width="300" alt="BewlyBewly icon" src="https://cdn.jsdelivr.net/gh/BewlyBewly/Imgs/logos/bewlybewly-vtuber-logo.png"><br/>
 </p>
